@@ -12,16 +12,18 @@ namespace CS_DZ_3
         {
             int numberOfOldLadies;
             int timeInLine;
+            int timeOfReceipt = 10;
+            int oneHour = 60;
 
             Console.Write("Введите количество старушек: ");
             numberOfOldLadies = Convert.ToInt32(Console.ReadLine());
 
-            timeInLine = numberOfOldLadies * 10;
+            timeInLine = numberOfOldLadies * timeOfReceipt;
 
-            int hour = timeInLine / 60;
-            int minutes = timeInLine % 60;
+            int hourInLine = timeInLine / oneHour;
+            int minutesInLine = timeInLine % oneHour;
 
-            Console.Write("Вы должны остстоять в очереди " + hour + " часа и " + minutes + " минут ");
+            Console.Write("Вы должны остстоять в очереди " + hourInLine + " часа и " + minutesInLine + " минут ");
 
         }
     }
