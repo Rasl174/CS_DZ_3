@@ -13,15 +13,15 @@ namespace CS_DZ_3
             int numberOfOldLadies;
             int timeInLine;
             int timeOfReceipt = 10;
-            int oneHour = 60;
+            int minutesInAnHour = 60;
 
             Console.Write("Введите количество старушек: ");
             numberOfOldLadies = Convert.ToInt32(Console.ReadLine());
 
             timeInLine = numberOfOldLadies * timeOfReceipt;
 
-            int hourInLine = timeInLine / oneHour;
-            int minutesInLine = timeInLine % oneHour;
+            int hourInLine = timeInLine / minutesInAnHour;
+            int minutesInLine = timeInLine % minutesInAnHour;
 
             Console.Write("Вы должны остстоять в очереди " + hourInLine + " часа и " + minutesInLine + " минут ");
 
