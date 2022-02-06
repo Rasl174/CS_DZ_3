@@ -11,17 +11,17 @@ namespace CS_DZ_3
         static void Main(string[] args)
         {
             int numberOfOldLadies;
-            int time;
+            int timeInLine;
 
             Console.Write("Введите количество старушек: ");
             numberOfOldLadies = Convert.ToInt32(Console.ReadLine());
 
-            time = numberOfOldLadies * 10;
+            timeInLine = numberOfOldLadies * 10;
 
-            int chas = time / 60;
-            int min = time % 60;
+            int hour = timeInLine / 60;
+            int minutes = timeInLine % 60;
 
-            Console.Write("Вы должны остстоять в очереди " + chas + " часа и " + min + " минут ");
+            Console.Write("Вы должны остстоять в очереди " + hour + " часа и " + minutes + " минут ");
 
         }
     }
